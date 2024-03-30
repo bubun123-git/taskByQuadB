@@ -52,7 +52,6 @@ function Taskinput() {
 
       <strong className="strong">Task List:</strong>
       <span>
-        {/* Rendering the Tasklist component with task list and delete function */}
         <Tasklist taskList={taskList} onDelete={handleDelete} />
       </span>
     </div>
@@ -61,9 +60,8 @@ function Taskinput() {
 
 const mapState = (state) => {
   return {
-    tasks: state.tasks
+    tasks: state.tasks,
   };
 };
-
 
 export default connect(mapState, { addTask })(Taskinput);

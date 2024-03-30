@@ -3,7 +3,6 @@ import "./Tasklist.css";
 import { connect } from "react-redux";
 import { deleteTask } from "./Store/TaskAction";
 
-
 function Tasklist({ taskList, onDelete }) {
   return (
     <div>
